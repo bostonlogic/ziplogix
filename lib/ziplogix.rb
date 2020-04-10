@@ -1,4 +1,5 @@
 require 'ziplogix/version'
+require 'ziplogix/property_information'
 require 'ziplogix/configuration'
 require 'resource_kit'
 require 'kartograph'

@@ -46,5 +46,40 @@ class ZiplogixTest < Minitest::Test
     assert Ziplogix::AccountLinkingFailedError
   end
 
-end
+  def test_transaction_types_constant_exists
+    refute_nil Ziplogix::TRANSACTIONTYPES
+  end
 
+  def test_transaction_types_constant_has_the_expected_values
+    transaction_types = [
+      'Listing',
+      'Purchase',
+      'Lease',
+      'LeaseListing'
+    ]
+
+    assert_equal transaction_types, Ziplogix::TRANSACTIONTYPES
+  end
+
+  def test_property_types_constant_exists
+    refute_nil Ziplogix::PROPERTYTYPES
+  end
+
+  def test_property_types_constant_has_the_expected_values
+    property_types = [
+      'Residential',
+      'Commercial',
+      'Industrial',
+      'VacantLand',
+      'MultiUnit',
+      'FarmAndRanch',
+      'Condominium',
+      'ManufacturedHome',
+      'Coop',
+      'Unlisted'
+    ]
+
+    assert_equal property_types, Ziplogix::PROPERTYTYPES
+  end
+
+end
