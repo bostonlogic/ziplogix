@@ -1,0 +1,27 @@
+{
+    "value": {
+        "id": "1234-5678-9abc-defg",
+        "name": "Terok Nor",
+        "status": "active",
+        "expiration": "0001-01-01T00:00:00Z",
+        "transactionType": "Listing",
+        "propertyType": "Residential",
+        "hasFiles": false,
+        "isSigned": false,
+        "created": "2020-04-06T22:45:17Z",
+        "lastUpdated": "2020-04-06T22:45:17Z",
+        "seller": "Bajoran Militia",
+        "buyer": "Starfleet",
+        "propertyAddress": "0 Bajoran Wormhole, Bajoran System, Alpha Quadrant",
+        "address": "0 Bajoran Wormhole",
+        "city": "Bajoran System",
+        "state": "Alpha Quadrant",
+        "zip": "NA-NA-NA",
+        "number": "12312434",
+        "ownerName": "Bajoran Government",
+        "ownerId": "abcdef10234567"
+    },
+    "resources": {
+        "data": "https://h5.zipformonline.com/api/transactions/1234-5678-9abc-defg/data"
+    }
+}

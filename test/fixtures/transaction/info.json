@@ -1,0 +1,22 @@
+{
+    "id": "1234-5678-9abc-defg",
+    "name": "Ancestral Home of the House of Black",
+    "status": "active",
+    "expiration": "0001-01-01T00:00:00Z",
+    "transactionType": "Listing",
+    "propertyType": "Condominium",
+    "hasFiles": false,
+    "isSigned": false,
+    "created": "2020-03-31T16:48:04Z",
+    "lastUpdated": "2020-03-31T17:08:31Z",
+    "seller": "Hermione Jean Granger, Ronald Bilius Weasley",
+    "buyer": "Harry James Potter, Ginevra Molly Weasley",
+    "propertyAddress": "12 Grimuld Place, London, England, NA-E72",
+    "address": "12 Grimuld Place",
+    "city": "London",
+    "state": "England",
+    "zip": "NA-E72",
+    "number": "235711",
+    "ownerName": "Sirius Black",
+    "ownerId": "Siriusblackdos2"
+}

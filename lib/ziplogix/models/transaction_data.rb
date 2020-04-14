@@ -1,0 +1,361 @@
+module Ziplogix
+  class TransactionData < BaseModel
+
+    attribute :file_name
+    attribute :broker_name
+    attribute :user_name
+    attribute :user_office_phone
+    attribute :user_fax_number
+    attribute :user_composite_address
+
+    attribute :buyer1_first_name
+    attribute :buyer1_middle_name
+    attribute :buyer1_last_name
+    attribute :buyer1_full_name
+    attribute :buyer1_email
+
+    attribute :buyer2_first_name
+    attribute :buyer2_middle_name
+    attribute :buyer2_last_name
+    attribute :buyer2_full_name
+    attribute :buyer2_email
+
+    attribute :seller1_first_name
+    attribute :seller1_middle_name
+    attribute :seller1_last_name
+    attribute :seller1_full_name
+    attribute :seller1_email
+
+    attribute :seller2_first_name
+    attribute :seller2_middle_name
+    attribute :seller2_last_name
+    attribute :seller2_full_name
+    attribute :seller2_email
+
+    attribute :list_agent_full_name
+    attribute :list_agent_cell_phone
+    attribute :list_agent_office_phone
+    attribute :list_agent_email
+
+    attribute :sale_agent_full_name
+    attribute :sale_agent_cell_phone
+    attribute :sale_agent_office_phone
+    attribute :sale_agent_email
+
+
+    attribute :property_listing_id
+    attribute :property_street_address
+    attribute :property_city
+    attribute :property_state
+    attribute :property_zip
+
+    attribute :property_county
+
+    attribute :property_school_district
+    attribute :property_description
+    attribute :property_subdivision
+    attribute :property_condo_fee
+    attribute :property_year_built
+
+    attribute :property_list_date
+    attribute :property_list_price
+
+    attribute :property_contract_date
+    attribute :property_close_price
+    attribute :property_close_date
+
+    attribute :property_listing_commission_percent
+    attribute :property_listing_commission_amount
+    attribute :property_admin_transaction_fee
+    attribute :property_other_deductions
+    attribute :property_agent_one_split_percent
+    attribute :property_agent_one_split_amount
+    attribute :property_agent_one_split_name
+    attribute :property_agent_two_split_percent
+    attribute :property_agent_two_split_amount
+    attribute :property_agent_two_split_name
+    attribute :property_agent_one_net
+    attribute :property_agent_owo_net
+    attribute :property_office_commission_net
+
+    attribute :property_buyer_commission_percent
+    attribute :property_buyer_commission_amount
+    attribute :property_admin_transaction_fee
+    attribute :property_other_deductions
+    attribute :property_referring_agent_fee_percent
+    attribute :property_referring_agent_fee_amount
+    attribute :property_referring_agent_name
+    attribute :property_agent_one_split_percent
+    attribute :property_agent_one_split_amount
+    attribute :property_agent_one_split_name
+    attribute :property_agent_two_split_percent
+    attribute :property_agent_two_split_amount
+    attribute :property_agent_two_split_name
+    attribute :property_agent_one_net
+    attribute :property_agent_two_net
+    attribute :property_office_commission_net
+  end
+end
+
+# REData_REProperties_ResidentialProperty_Listing_StreetAddress_CompositeAddress
+# REData_REProperties_ResidentialProperty_Listing_StreetAddress_City
+# REData_REProperties_ResidentialProperty_Listing_StreetAddress_StateOrProvince
+# REData_REProperties_ResidentialProperty_Listing_StreetAddress_PostalCode
+
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REAgent_FullName
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REAgent_ContactInformation_OfficePhone
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REAgent_ContactInformation_CellPhone
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REAgent_ContactInformation_Pager
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REAgent_ContactInformation_Email
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REAgent_AgentID
+
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REOffice_Name
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REOffice_ContactInformation_OfficePhone
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REOffice_ContactInformation_Fax
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REOffice_StreetAddress_CompositeAddres
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REOffice_StreetAddress_City
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REOffice_StreetAddress_StateOrProvince
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REOffice_StreetAddress_PostalCode
+# REData_REProperties_ResidentialProperty_Listing_ListingData_REOffice_OfficeID
+
+# REData_REProperties_ResidentialProperty_Listing_ListingData_ListDate
+# REData_REProperties_ResidentialProperty_Listing_ListingData_ListPrice
+# REData_REProperties_ResidentialProperty_Listing_ListingData_ExpirationDate
+# REData_REProperties_ResidentialProperty_Listing_ListingData_Remarks
+# REData_REProperties_ResidentialProperty_Listing_GeographicData_County
+# REData_REProperties_ResidentialProperty_Listing_ListingID
+
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REAgent_FullName
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REAgent_ContactInformation_OfficePhone
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REAgent_ContactInformation_CellPhone
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REAgent_ContactInformation_Pager
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REAgent_ContactInformation_Email
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REAgent_AgentID
+
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REOffice_Name
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REOffice_ContactInformation_OfficePhone
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REOffice_ContactInformation_Fax
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REOffice_StreetAddress_CompositeAddress
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REOffice_StreetAddress_City
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REOffice_StreetAddress_StateOrProvince
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REOffice_StreetAddress_PostalCode
+# REData_REProperties_ResidentialProperty_Listing_SalesData_REOffice_OfficeID
+
+# REData_REProperties_ResidentialProperty_Listing_SalesData_ContractDate
+# REData_REProperties_ResidentialProperty_Listing_SalesData_ClosePrice
+# REData_REProperties_ResidentialProperty_Listing_SalesData_CloseDate
+# REData_REProperties_ResidentialProperty_Listing_SalesData_AmountFinanced
+# REData_REProperties_ResidentialProperty_Listing_SchoolData_SchoolDistrict
+# REData_REProperties_ResidentialProperty_Listing_TaxData_TaxID
+# REData_REProperties_ResidentialProperty_Listing_TaxData_County
+# REData_REProperties_ResidentialProperty_Listing_TaxData_LegalDescription
+# REData_REProperties_ResidentialProperty_Listing_ParcelNumber
+
+# REData_REProperties_ResidentialProperty_Subdivision
+# REData_REProperties_ResidentialProperty_AssociationFee
+# REData_REProperties_ResidentialProperty_YearBuilt
+
+
+# ===================================================================
+
+
+# Other_Seller1_FirstName
+# Other_Seller1_MiddleName
+# Other_Seller1_LastName
+# Other_Seller1_FullName
+# Other_Seller1_Relationship
+# Other_Seller1_StreetAddress_CompositeAddress
+# Other_Seller1_StreetAddress_City
+# Other_Seller1_StreetAddress_StateOrProvince
+# Other_Seller1_StreetAddress_PostalCode
+# Other_Seller1_ContactInformation_OfficePhone
+# Other_Seller1_ContactInformation_CellPhone
+# Other_Seller1_ContactInformation_HomePhone
+# Other_Seller1_ContactInformation_Fax
+# Other_Seller1_ContactInformation_Email
+
+# Other_Seller2_FirstName
+# Other_Seller2_MiddleName
+# Other_Seller2_LastName
+# Other_Seller2_FullName
+# Other_Seller2_Relationship
+# Other_Seller2_StreetAddress_CompositeAddress
+# Other_Seller2_StreetAddress_City
+# Other_Seller2_StreetAddress_StateOrProvince
+# Other_Seller2_StreetAddress_PostalCode
+# Other_Seller2_ContactInformation_OfficePhone
+# Other_Seller2_ContactInformation_CellPhone
+# Other_Seller2_ContactInformation_HomePhone
+# Other_Seller2_ContactInformation_Fax
+# Other_Seller2_ContactInformation_Email
+
+# Other_Buyer1_FirstName
+# Other_Buyer1_MiddleName
+# Other_Buyer1_LastName
+# Other_Buyer1_FullName
+# Other_Buyer1_Relationship
+# Other_Buyer1_StreetAddress_CompositeAddress
+# Other_Buyer1_StreetAddress_City
+# Other_Buyer1_StreetAddress_StateOrProvince
+# Other_Buyer1_StreetAddress_PostalCode
+# Other_Buyer1_ContactInformation_OfficePhone
+# Other_Buyer1_ContactInformation_CellPhone
+# Other_Buyer1_ContactInformation_HomePhone
+# Other_Buyer1_ContactInformation_Fax
+# Other_Buyer1_ContactInformation_Email
+
+# Other_Buyer2_FirstName
+# Other_Buyer2_MiddleName
+# Other_Buyer2_LastName
+# Other_Buyer2_FullName
+# Other_Buyer2_Relationship
+# Other_Buyer2_StreetAddress_CompositeAddress
+# Other_Buyer2_StreetAddress_City
+# Other_Buyer2_StreetAddress_StateOrProvince
+# Other_Buyer2_StreetAddress_PostalCode
+# Other_Buyer2_ContactInformation_OfficePhone
+# Other_Buyer2_ContactInformation_CellPhone
+# Other_Buyer2_ContactInformation_HomePhone
+# Other_Buyer2_ContactInformation_Fax
+# Other_Buyer2_ContactInformation_Email
+
+
+# ===================================================================
+
+
+# Other_AdditionalInfo_Attorneys_Sellers_Name
+# Other_AdditionalInfo_Attorneys_Sellers_StreetAddress_CompositeAddress
+# Other_AdditionalInfo_Attorneys_Sellers_StreetAddress_City
+# Other_AdditionalInfo_Attorneys_Sellers_StreetAddress_StateOrProvince
+# Other_AdditionalInfo_Attorneys_Sellers_StreetAddress_PostalCode
+# Other_AdditionalInfo_Attorneys_Sellers_ContactName
+# Other_AdditionalInfo_Attorneys_Sellers_ContactInformation_OfficePhone
+# Other_AdditionalInfo_Attorneys_Sellers_ContactInformation_Fax
+# Other_AdditionalInfo_Attorneys_Sellers_ContactInformation_Email
+
+# Other_AdditionalInfo_Attorneys_Buyers_Name
+# Other_AdditionalInfo_Attorneys_Buyers_StreetAddress_CompositeAddress
+# Other_AdditionalInfo_Attorneys_Buyers_StreetAddress_City
+# Other_AdditionalInfo_Attorneys_Buyers_StreetAddress_StateOrProvince
+# Other_AdditionalInfo_Attorneys_Buyers_StreetAddress_PostalCode
+# Other_AdditionalInfo_Attorneys_Buyers_ContactName
+# Other_AdditionalInfo_Attorneys_Buyers_ContactInformation_OfficePhone
+# Other_AdditionalInfo_Attorneys_Buyers_ContactInformation_Fax
+# Other_AdditionalInfo_Attorneys_Buyers_ContactInformation_Email
+
+# Other_AdditionalInfo_Appraiser_Name
+# Other_AdditionalInfo_Appraiser_StreetAddress_CompositeAddress
+# Other_AdditionalInfo_Appraiser_StreetAddress_City
+# Other_AdditionalInfo_Appraiser_StreetAddress_StateOrProvince
+# Other_AdditionalInfo_Appraiser_StreetAddress_PostalCode
+# Other_AdditionalInfo_Appraiser_ContactName
+# Other_AdditionalInfo_Appraiser_ContactInformation_OfficePhone
+# Other_AdditionalInfo_Appraiser_ContactInformation_CellPhone
+# Other_AdditionalInfo_Appraiser_ContactInformation_Fax
+# Other_AdditionalInfo_Appraiser_ContactInformation_Pager
+# Other_AdditionalInfo_Appraiser_ContactInformation_Email
+
+# Other_AdditionalInfo_Escrow_Name
+# Other_AdditionalInfo_Escrow_StreetAddress_CompositeAddress
+# Other_AdditionalInfo_Escrow_StreetAddress_City
+# Other_AdditionalInfo_Escrow_StreetAddress_StateOrProvince
+# Other_AdditionalInfo_Escrow_StreetAddress_PostalCode
+# Other_AdditionalInfo_Escrow_ContactName
+# Other_AdditionalInfo_Escrow_ContactInformation_OfficePhone
+# Other_AdditionalInfo_Escrow_ContactInformation_Fax
+# Other_AdditionalInfo_Escrow_ContactInformation_Email
+# Other_AdditionalInfo_Escrow_CaseNumber
+
+# Other_AdditionalInfo_Lender_Name
+# Other_AdditionalInfo_Lender_StreetAddress_CompositeAddress
+# Other_AdditionalInfo_Lender_StreetAddress_City
+# Other_AdditionalInfo_Lender_StreetAddress_StateOrProvince
+# Other_AdditionalInfo_Lender_StreetAddress_PostalCode
+# Other_AdditionalInfo_Lender_ContactName
+# Other_AdditionalInfo_Lender_ContactInformation_OfficePhone
+# Other_AdditionalInfo_Lender_ContactInformation_CellPhone
+# Other_AdditionalInfo_Lender_ContactInformation_Fax
+# Other_AdditionalInfo_Lender_ContactInformation_Pager
+# Other_AdditionalInfo_Lender_ContactInformation_Email
+# Other_AdditionalInfo_Lender_LoanNumber
+
+# Other_AdditionalInfo_TitleInformation_Name
+# Other_AdditionalInfo_TitleInformation_StreetAddress_CompositeAddress
+# Other_AdditionalInfo_TitleInformation_StreetAddress_City
+# Other_AdditionalInfo_TitleInformation_StreetAddress_StateOrProvince
+# Other_AdditionalInfo_TitleInformation_StreetAddress_PostalCode
+# Other_AdditionalInfo_TitleInformation_ContactName
+# Other_AdditionalInfo_TitleInformation_ContactInformation_OfficePhone
+# Other_AdditionalInfo_TitleInformation_ContactInformation_CellPhone
+# Other_AdditionalInfo_TitleInformation_ContactInformation_Fax
+# Other_AdditionalInfo_TitleInformation_ContactInformation_Email
+
+# Other_AdditionalInfo_AdditionalListingData_ConditionInfo_Includes
+# Other_AdditionalInfo_AdditionalListingData_ConditionInfo_Excludes
+# Other_AdditionalInfo_AdditionalListingData_Encumberances_MortgageBalance1
+# Other_AdditionalInfo_AdditionalListingData_Encumberances_MortgageBalance2
+# Other_AdditionalInfo_AdditionalListingData_Encumberances_TotalEncumbrances
+# Other_AdditionalInfo_AdditionalListingData_Encumberances_OtherLien
+# Other_AdditionalInfo_AdditionalListingData_Encumberances_OtherLienDescription
+
+# Other_AdditionalInfo_AdditionalSalesData_OfferDate
+# Other_AdditionalInfo_AdditionalSalesData_OfferAcceptDate
+# Other_AdditionalInfo_AdditionalSalesData_DepositAmount
+
+# Other_AdditionalInfo_AdditionalTaxData_LotNumber
+# Other_AdditionalInfo_AdditionalTaxData_UnitNumber
+# Other_AdditionalInfo_AdditionalTaxData_Township
+# Other_AdditionalInfo_AdditionalTaxData_BlockNumber
+# Other_AdditionalInfo_AdditionalTaxData_PlatBookNumber
+# Other_AdditionalInfo_AdditionalTaxData_PlatPageNumber
+
+# Other_AdditionalInfo_AdditionalFields_CS_PropertyType_Residential
+# Other_AdditionalInfo_AdditionalFields_CS_PropertyType_Multi
+# Other_AdditionalInfo_AdditionalFields_CS_PropertyType_Vacant
+# Other_AdditionalInfo_AdditionalFields_CS_PropertyType_Commercial
+# Other_AdditionalInfo_AdditionalFields_CS_PropertyType_OtherPT
+# Other_AdditionalInfo_AdditionalFields_CS_PropertyType_OtherPTDescription
+
+# Other_ZFMetadata_ZFFilename
+# Other_ZFMetadata_ZFBrokerName
+# Other_ZFMetadata_ZFUserName_Name
+# Other_ZFMetadata_ZFUserName_OfficePhone
+# Other_ZFMetadata_ZFUserName_Fax
+# Other_ZFMetadata_ZFUserName_CompositeAddress
+
+# REData_REProperties_ResidentialProperty_Listing_SalesData_ListingCommissionPercent
+# REData_REProperties_ResidentialProperty_Listing_SalesData_ListingCommissionAmount
+# REData_REProperties_ResidentialProperty_Listing_SalesData_AdminTransactionFee
+# REData_REProperties_ResidentialProperty_Listing_SalesData_OtherDeductions
+# REData_REProperties_ResidentialProperty_Listing_SalesData_AgentOneSplitPercent
+# REData_REProperties_ResidentialProperty_Listing_SalesData_AgentOneSplitAmount
+# REData_REProperties_ResidentialProperty_Listing_SalesData_AgentOneSplitName
+# REData_REProperties_ResidentialProperty_Listing_SalesData_AgentTwoSplitPercent
+# REData_REProperties_ResidentialProperty_Listing_SalesData_AgentTwoSplitAmount
+# REData_REProperties_ResidentialProperty_Listing_SalesData_AgentTwoSplitName
+# REData_REProperties_ResidentialProperty_Listing_SalesData_AgentOneNet
+# REData_REProperties_ResidentialProperty_Listing_SalesData_AgentTwoNet
+# REData_REProperties_ResidentialProperty_Listing_SalesData_OfficeCommissionNet
+
+# REData_REProperties_ResidentialProperty_BuySideData_BuyerCommissionPercent
+# REData_REProperties_ResidentialProperty_BuySideData_BuyerCommissionAmount
+# REData_REProperties_ResidentialProperty_BuySideData_AdminTransactionFee
+# REData_REProperties_ResidentialProperty_BuySideData_OtherDeductions
+# REData_REProperties_ResidentialProperty_BuySideData_ReferringAgentFeePercent
+# REData_REProperties_ResidentialProperty_BuySideData_ReferringAgentFeeAmount
+# REData_REProperties_ResidentialProperty_BuySideData_ReferringAgentName
+# REData_REProperties_ResidentialProperty_BuySideData_AgentOneSplitPercent
+# REData_REProperties_ResidentialProperty_BuySideData_AgentOneSplitAmount
+# REData_REProperties_ResidentialProperty_BuySideData_AgentOneSplitName
+# REData_REProperties_ResidentialProperty_BuySideData_AgentTwoSplitPercent
+# REData_REProperties_ResidentialProperty_BuySideData_AgentTwoSplitAmount
+# REData_REProperties_ResidentialProperty_BuySideData_AgentTwoSplitName
+# REData_REProperties_ResidentialProperty_BuySideData_AgentOneNet
+# REData_REProperties_ResidentialProperty_BuySideData_AgentTwoNet
+# REData_REProperties_ResidentialProperty_BuySideData_OfficeCommissionNet
+
+# REData_REProperties_ResidentialProperty_Listing_SalesData_SignerRepresentative_FirstName
+# REData_REProperties_ResidentialProperty_Listing_SalesData_SignerRepresentative_MiddleName
+# REData_REProperties_ResidentialProperty_Listing_SalesData_SignerRepresentative_LastName
+# REData_REProperties_ResidentialProperty_Listing_SalesData_SignerRepresentative_Email
+
