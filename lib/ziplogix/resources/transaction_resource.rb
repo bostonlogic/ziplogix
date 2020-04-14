@@ -19,7 +19,7 @@ module Ziplogix
       # GET /transactions?[since=<fromDate>&status=<status>&agentId=<otherAgentId>]
       action :all do
         verb :get
-        query_keys :since, :status, :agentId
+        query_keys :since, :modifiedSince, :status, :agentId, :filterBy
         path 'api/transactions'
         handler(200) { |response| TransactionMapping.extract_collection(response.body, :read) }
       end
