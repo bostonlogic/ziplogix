@@ -6,7 +6,7 @@ class Ziplogix::TransactionResourceTest < Minitest::Test
 
     def test_success_on_create
       stub_request(:post, 'https://h5.zipformonline.com/api/transactions').
-        to_return(body: api_fixture('transaction/create'))
+        to_return(status: 201, body: api_fixture('transaction/create'))
 
       connection = Ziplogix::Client.new(shared_key: 'alohomora').connection
       resource = Ziplogix::TransactionResource.new(connection: connection)
