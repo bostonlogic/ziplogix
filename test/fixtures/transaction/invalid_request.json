@@ -1,0 +1,12 @@
+{
+    "Message": "The request is invalid.",
+    "ModelState": {
+        "newTransaction.transactionType": [
+            "Error converting value \"Lease-Listing\" to type 'System.Nullable`1[ZFramework.ZipformObjects.TransactionType]'. Path 'transactionType', line 4, position 36."
+        ],
+        "newTransaction.data.REData_REProperties_ResidentialProperty_Listing_ListingID": [
+            "After parsing a value an unexpected character was encountered: \". Path 'data.REData_REProperties_ResidentialProperty_Listing_ListingID', line 17, position 4.",
+            "After parsing a value an unexpected character was encountered: \". Path 'data.REData_REProperties_ResidentialProperty_Listing_ListingID', line 17, position 4."
+        ]
+    }
+}
