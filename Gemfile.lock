@@ -36,7 +36,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (4.0.4)
-    rake (10.5.0)
+    rake (13.0.1)
     resource_kit (0.1.7)
       addressable (>= 2.3.6, < 3.0.0)
     safe_yaml (1.0.5)
@@ -58,7 +58,7 @@ DEPENDENCIES
   bundler (~> 1.14)
   minitest (~> 5.0)
   pry
-  rake (~> 10.0)
+  rake (~> 13.0)
   webmock
   ziplogix!
 
