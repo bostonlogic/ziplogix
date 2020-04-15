@@ -21,19 +21,19 @@ module Ziplogix
       end
 
       # POST auth/end-session
-      action :destroy do
+      action :end_session do
         verb :post
         path 'api/auth/end-session'
         handler(204) { |_| true }
       end
 
-      # POST auth/unlink
-      # action :unlink do
-      #   verb :post
-      #   body { |object| AuthenticationMapping.representation_for(:destroy, object) }
-      #   path 'api/auth/unlink'
-      #   handler(200) { |response| AuthenticationMapping.extract_single(response.body, :read) }
-      # end
+      # GET auth/unlink
+      action :destroy do
+        verb :get
+        query_keys :SharedKey, :ExternalId
+        path 'api/auth/unlink'
+        handler(200) { |_| true }
+      end
 
     end
 

@@ -78,11 +78,37 @@ class Ziplogix::AuthenticationResourceTest < Minitest::Test
 
   end
 
-  class Destroy < Minitest::Test
+  class EndSession < Minitest::Test
 
-    def test_success_on_destroy
+    def test_success_on_end_session
       stub_request(:post, 'https://h5.zipformonline.com/api/auth/end-session').
         to_return(status: 204, body: [])
+
+      connection = Ziplogix::Client.new(shared_key: 'alohomora').connection
+      resource = Ziplogix::AuthenticationResource.new(connection: connection)
+      
+      authentication = resource.end_session
+
+      assert authentication
+    end
+
+    def test_failure_on_end_session
+      stub_request(:post, 'https://h5.zipformonline.com/api/auth/end-session').
+        to_return(status: 401)
+
+      connection = Ziplogix::Client.new(shared_key: 'alohomora').connection
+      resource = Ziplogix::AuthenticationResource.new(connection: connection)
+      
+      assert_raises(Ziplogix::UnauthorizedError) { resource.end_session }
+    end
+
+  end
+
+  class Destroy < Minitest::Test
+    
+    def test_success_on_destroy
+      stub_request(:get, 'https://h5.zipformonline.com/api/auth/unlink').
+        to_return(status: 200, body: [])
 
       connection = Ziplogix::Client.new(shared_key: 'alohomora').connection
       resource = Ziplogix::AuthenticationResource.new(connection: connection)
@@ -93,25 +119,13 @@ class Ziplogix::AuthenticationResourceTest < Minitest::Test
     end
 
     def test_failure_on_destroy
-      stub_request(:post, 'https://h5.zipformonline.com/api/auth/end-session').
-        to_return(status: 401)
+      stub_request(:get, 'https://h5.zipformonline.com/api/auth/unlink').
+        to_return(status: 304)
 
       connection = Ziplogix::Client.new(shared_key: 'alohomora').connection
       resource = Ziplogix::AuthenticationResource.new(connection: connection)
       
-      assert_raises(Ziplogix::UnauthorizedError) { resource.destroy }
-    end
-
-  end
-
-  class Unlink < Minitest::Test
-    
-    def test_success_on_unlink
-      skip('Need to decided whether and what to test here')
-    end
-
-    def test_failure_on_unlink
-      skip('Need to decided whether and what to test here')
+      assert_raises(Ziplogix::NotModifiedError) { resource.destroy }
     end
 
   end
