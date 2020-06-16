@@ -5,7 +5,7 @@ module Ziplogix
     kartograph do
       mapping TransactionData
 
-      scoped :create, :update do
+      scoped :create, :update, :read do
         property :buyer1_first_name,                    key: 'Other_Buyer1_FirstName'
         property :buyer1_middle_name,                   key: 'Other_Buyer1_MiddleName'
         property :buyer1_last_name,                     key: 'Other_Buyer1_LastName'
@@ -98,48 +98,9 @@ module Ziplogix
         property :user_name,                            key: 'Other_ZFMetadata_ZFUserName_Name'
         property :user_office_phone,                    key: 'Other_ZFMetadata_ZFUserName_OfficePhone'
         property :user_fax_number,                      key: 'Other_ZFMetadata_ZFUserName_Fax'
+        property :user_composite_address,               key: 'Other_ZFMetadata_ZFUserName_CompositeAddress'
       end
-
-      scoped :read do
-        property :file_name,              key: 'Other_ZFMetadata_ZFFilename'
-        property :broker_name,            key: 'Other_ZFMetadata_ZFBrokerName'
-        property :user_name,              key: 'Other_ZFMetadata_ZFUserName_Name'
-        property :user_office_phone,      key: 'Other_ZFMetadata_ZFUserName_OfficePhone'
-        property :user_fax_number,        key: 'Other_ZFMetadata_ZFUserName_Fax'
-        property :user_composite_address, key: 'Other_ZFMetadata_ZFUserName_CompositeAddress'
-
-        property :buyer1_first_name,      key: 'Other_Buyer1_FirstName'
-        property :buyer1_middle_name,     key: 'Other_Buyer1_MiddleName'
-        property :buyer1_last_name,       key: 'Other_Buyer1_LastName'
-        property :buyer1_full_name,       key: 'Other_Buyer1_FullName'
-        property :buyer1_email,           key: 'Other_Buyer1_ContactInformation_Email'
-
-        property :buyer2_first_name,      key: 'Other_Buyer2_FirstName'
-        property :buyer2_middle_name,     key: 'Other_Buyer2_MiddleName'
-        property :buyer2_last_name,       key: 'Other_Buyer2_LastName'
-        property :buyer2_full_name,       key: 'Other_Buyer2_FullName'
-        property :buyer2_email,           key: 'Other_Buyer2_ContactInformation_Email'
-
-        property :seller1_first_name,     key: 'Other_Seller1_FirstName'
-        property :seller1_middle_name,    key: 'Other_Seller1_MiddleName'
-        property :seller1_last_name,      key: 'Other_Seller1_LastName'
-        property :seller1_full_name,      key: 'Other_Seller1_FullName'
-        property :seller1_email,          key: 'Other_Seller1_ContactInformation_Email'
-
-        property :seller2_first_name,     key: 'Other_Seller2_FirstName'
-        property :seller2_middle_name,    key: 'Other_Seller2_MiddleName'
-        property :seller2_last_name,      key: 'Other_Seller2_LastName'
-        property :seller2_full_name,      key: 'Other_Seller2_FullName'
-        property :seller2_email,          key: 'Other_Seller2_ContactInformation_Email'
-
-        property :list_agent_full_name,   key: 'REData_REProperties_ResidentialProperty_Listing_ListingData_REAgent_FullName'
-        property :list_agent_email,       key: 'REData_REProperties_ResidentialProperty_Listing_ListingData_REAgent_ContactInformation_Email'
-        property :sale_agent_full_name,   key: 'REData_REProperties_ResidentialProperty_Listing_SalesData_REAgent_FullName'
-        property :sale_agent_email,       key: 'REData_REProperties_ResidentialProperty_Listing_SalesData_REAgent_ContactInformation_Email'
-
-        property :property_listing_id,    key: 'REData_REProperties_ResidentialProperty_Listing_ListingID'
-      end
-
+      
     end
 
   end
