@@ -98,6 +98,7 @@ module Ziplogix
         property :user_name,                            key: 'Other_ZFMetadata_ZFUserName_Name'
         property :user_office_phone,                    key: 'Other_ZFMetadata_ZFUserName_OfficePhone'
         property :user_fax_number,                      key: 'Other_ZFMetadata_ZFUserName_Fax'
+        property :user_composite_address,               key: 'Other_ZFMetadata_ZFUserName_CompositeAddress'
       end
       
     end

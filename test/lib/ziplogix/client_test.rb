@@ -37,7 +37,7 @@ class Ziplogix::ClientTest < Minitest::Test
       assert_equal 'https://h5.zipformonline.com/api', ziplogix_client.connection.url_prefix.to_s
     end
 
-    def test_connection_builds_the_correct_headers
+    def test_connection_builds_the_correct_headers_when_only_shared_key_is_present
       ziplogix_client = Ziplogix::Client.new(shared_key: 'alohomora')
 
       assert_equal 'application/json', ziplogix_client.connection.headers[:content_type]
@@ -45,7 +45,7 @@ class Ziplogix::ClientTest < Minitest::Test
       assert_nil ziplogix_client.connection.headers['X-Auth-SharedKey']
     end
 
-    def test_connection_builds_the_correct_headers
+    def test_connection_builds_the_correct_headers_when_shared_key_and_context_id_are_present
       ziplogix_client = Ziplogix::Client.new(shared_key: 'alohomora', context_id: 'waddiwasi')
 
       assert_equal 'application/json', ziplogix_client.connection.headers[:content_type]

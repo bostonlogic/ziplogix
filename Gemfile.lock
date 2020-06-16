@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ziplogix (0.0.1)
+    ziplogix (0.0.2)
       faraday (~> 0.15.0)
       kartograph (~> 0.2.3)
       resource_kit (~> 0.1.5)
@@ -28,7 +28,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     hashdiff (1.0.1)
     ice_nine (0.11.2)
-    kartograph (0.2.7)
+    kartograph (0.2.8)
     method_source (1.0.0)
     minitest (5.14.0)
     multipart-post (2.1.1)
