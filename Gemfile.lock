@@ -1,11 +1,11 @@
 PATH
   remote: .
   specs:
-    ziplogix (0.0.2)
+    ziplogix (0.0.3)
       faraday (~> 0.15.0)
-      kartograph (~> 0.2.3)
-      resource_kit (~> 0.1.5)
-      virtus (~> 1.0.3)
+      kartograph (~> 0.2.8)
+      resource_kit (~> 0.1.7)
+      virtus (~> 2.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -23,7 +23,6 @@ GEM
       safe_yaml (~> 1.0.0)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
-    equalizer (0.0.11)
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
     hashdiff (1.0.1)
@@ -41,11 +40,10 @@ GEM
       addressable (>= 2.3.6, < 3.0.0)
     safe_yaml (1.0.5)
     thread_safe (0.3.6)
-    virtus (1.0.5)
+    virtus (2.0.0)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
-      equalizer (~> 0.0, >= 0.0.9)
     webmock (3.8.3)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -55,7 +53,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.14)
+  bundler
   minitest (~> 5.0)
   pry
   rake (~> 13.0)
