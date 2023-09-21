@@ -7,7 +7,7 @@ module Ziplogix
 
       scoped :read do
         property :id,                            key: 'id'
-        property :name,                          key: 'name'
+        property :document_name,                 key: 'name'
         property :description,                   key: 'description'
         property :content_type,                  key: 'contentType'
         property :version,                       key: 'version'

@@ -1,7 +1,7 @@
 module Ziplogix
   class TransactionDocument < BaseModel
     attribute :id
-    attribute :name
+    attribute :document_name
     attribute :description
     attribute :conetnt_type
     attribute :version
