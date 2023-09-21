@@ -47,6 +47,13 @@ module Ziplogix
         handler(200) { |_| true }
       end
 
+      # GET transactions/:transaction_id/data
+      action :documents do
+        verb :get
+        path 'api/transactions/:transaction_id/documents?excludeforms=true'
+        handler(200) { |response| TransactionDocumentMapping.extract_single(response.body, :read) }
+      end
+
       # DELETE transactions/:transaaction_id
       action :destroy do
         verb :delete
