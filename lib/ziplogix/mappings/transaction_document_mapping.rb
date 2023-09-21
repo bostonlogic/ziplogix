@@ -5,6 +5,8 @@ module Ziplogix
     kartograph do
       mapping TransactionDocument
 
+      root_key singular: 'value', plural: 'value', scopes: [:read]
+
       scoped :read do
         property :id,                            key: 'id'
         property :document_name,                 key: 'name'
