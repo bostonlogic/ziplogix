@@ -12,11 +12,13 @@ module Ziplogix
   autoload :ErrorMapping, 'ziplogix/mappings/error_mapping'
   autoload :TransactionMapping, 'ziplogix/mappings/transaction_mapping'
   autoload :TransactionDataMapping, 'ziplogix/mappings/transaction_data_mapping'
+  autoload :TransactionDocumentMapping, 'ziplogix/mappings/transaction_document_mapping'
 
   autoload :BaseModel, 'ziplogix/models/base_model'
   autoload :Authentication, 'ziplogix/models/authentication'
   autoload :Transaction, 'ziplogix/models/transaction'
   autoload :TransactionData, 'ziplogix/models/transaction_data'
+  autoload :TransactionDocument, 'ziplogix/models/transaction_document'
 
   autoload :AuthenticationResource, 'ziplogix/resources/authentication_resource'
   autoload :ErrorHandlingResourcable, 'ziplogix/error_handling_resourcable'
