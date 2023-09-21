@@ -3,7 +3,7 @@ module Ziplogix
     attribute :id
     attribute :document_name
     attribute :description
-    attribute :conetnt_type
+    attribute :content_type
     attribute :version
     attribute :signed
   end
