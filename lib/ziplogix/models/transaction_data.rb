@@ -13,24 +13,52 @@ module Ziplogix
     attribute :buyer1_last_name
     attribute :buyer1_full_name
     attribute :buyer1_email
+    attribute :buyer1_cell_phone
+    attribute :buyer1_home_phone
+    attribute :buyer1_address
+    attribute :buyer1_city
+    attribute :buyer1_email
+    attribute :buyer1_state
+    attribute :buyer1_zip
 
     attribute :buyer2_first_name
     attribute :buyer2_middle_name
     attribute :buyer2_last_name
     attribute :buyer2_full_name
     attribute :buyer2_email
+    attribute :buyer2_cell_phone
+    attribute :buyer2_home_phone
+    attribute :buyer2_address
+    attribute :buyer2_city
+    attribute :buyer2_email
+    attribute :buyer2_state
+    attribute :buyer2_zip
 
     attribute :seller1_first_name
     attribute :seller1_middle_name
     attribute :seller1_last_name
     attribute :seller1_full_name
     attribute :seller1_email
+    attribute :seller1_cell_phone
+    attribute :seller1_home_phone
+    attribute :seller1_address
+    attribute :seller1_city
+    attribute :seller1_email
+    attribute :seller1_state
+    attribute :seller1_zip
 
     attribute :seller2_first_name
     attribute :seller2_middle_name
     attribute :seller2_last_name
     attribute :seller2_full_name
     attribute :seller2_email
+    attribute :seller2_cell_phone
+    attribute :seller2_home_phone
+    attribute :seller2_address
+    attribute :seller2_city
+    attribute :seller2_email
+    attribute :seller2_state
+    attribute :seller2_zip
 
     attribute :list_agent_full_name
     attribute :list_agent_cell_phone
